@@ -15,7 +15,7 @@ public class MainWindow extends JFrame {
 
       // Title at the top
       JLabel titleLabel = new JLabel(
-          "Welcome to GamePlan!"
+          "Welcome to GamePlan!",
           SwingConstants.CENTER
       );
       titleLabel.setFont(new Font("Arial", Font.BOLD, 26));
@@ -51,7 +51,7 @@ public class MainWindow extends JFrame {
   }
 
   public static void main(String[] args) {
-      SwingUtilities.invokeLater()) -> {
+      SwingUtilities.invokeLater(()-> {
           MainWindow window = new MainWindow();
           window.setVisible(true);
       });
