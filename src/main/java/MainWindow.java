@@ -36,10 +36,11 @@ public class MainWindow extends Application {
         Button editButton = new Button("Edit Task");
         Button deleteButton = new Button("Delete Task");
 
-        HBox buttonPanel = new HBox(15, addButton, editButton, deleteButton);
-        buttonPanel.setAlignment(Pos.CENTER);
-        buttonPanel.setPadding(new Insets(20));
-        root.setBottom(buttonPanel);
+        HBox buttonPanel = new HBox(10, addButton, deleteButton, editButton);
+        buttonPanel.setAlignment(Pos.CENTER_LEFT);
+        buttonPanel.setPadding(new Insets(10));
+        
+        topSection.getChildren().add(buttonPanel);
 
         // Display window
         Scene scene = new Scene(root, 800, 500);
